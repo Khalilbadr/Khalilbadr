@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خليل الوجيه - التواصل</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/enhanced_style.css">
+  </head>
+
+  <body>
+    <div class="page-container">
+      <!-- القائمة الجانبية -->
+      <div class="sidebar">
+        <div class="sidebar-header">
+          <img src="images/profile.png" alt="خليل الوجيه" onerror="this.src='https://via.placeholder.com/150?text=خليل+الوجيه'">
+          <h3>م. خليل الوجيه</h3>
+          <p> نظم معلومات وإدارة مخازن</p>
+        </div>
+        
+        <div class="sidebar-nav">
+          <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="resume.html"><i class="fas fa-file-alt"></i> السيرة الذاتية</a></li>
+            <li><a href="skills.html"><i class="fas fa-chart-bar"></i> المهارات</a></li>
+            <li><a href="portfolio.html"><i class="fas fa-project-diagram"></i> الأعمال</a></li>
+            <li><a href="services.html"><i class="fas fa-cogs"></i> الخدمات</a></li>
+            <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> التواصل</a></li>
+          </ul>
+        </div>
+        
+        <div class="sidebar-contact">
+          <p><i class="fas fa-phone"></i> 771818420</p>
+          <p><i class="fas fa-envelope"></i> khalilawagih@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> تعز - اليمن</p>
+        </div>
+        
+        <div class="sidebar-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <!-- زر التبديل للقائمة الجانبية في الشاشات الصغيرة -->
+      <div class="sidebar-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      
+      <!-- المحتوى الرئيسي -->
+      <div class="main-content">
+        <div class="header">
+          <p>برمجة – تصميم – تقارير – بحوث – استبيان – برزنتيشن – وكل ما تبحث عنه</p>
+          <h1>تواصل معي</h1>
+        </div>
+        
+        <div class="card fade-in">
+          <div class="card-header">
+            <h2>معلومات التواصل</h2>
+          </div>
+          <div class="resume-section">
+            <p><i class="fas fa-user"></i> <strong>الاسم:</strong> خليل الوجيه</p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>العنوان:</strong> تعز – اليمن</p>
+            <p><i class="fas fa-phone"></i> <strong>هاتف:</strong> 771818420</p>
+            <p><i class="fas fa-phone"></i> <strong>هاتف بديل:</strong> 770928138</p>
+            <p><i class="fas fa-envelope"></i> <strong>البريد الإلكتروني:</strong> khalilawagih@gmail.com</p>
+          </div>
+        </div>
+        
+        <div class="card fade-in">
+          <div class="card-header">
+            <h2>أرسل رسالة</h2>
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">الاسم</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">الموضوع</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">الرسالة</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn">إرسال الرسالة</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="card fade-in">
+          <div class="card-header">
+            <h2>تواصل مباشرة</h2>
+          </div>
+          <div class="content" style="text-align: center;">
+            <a href="https://wa.me/+967771818420" class="btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
+            </a>
+          </div>
+        </div>
+        
+        <div class="card fade-in">
+          <div class="card-header">
+            <h2>ساعات العمل</h2>
+          </div>
+          <div class="resume-section">
+            <p><strong>الأحد - الخميس:</strong> 8:00 صباحاً - 4:00 مساءً</p>
+            <p><strong>الجمعة - السبت:</strong> مغلق</p>
+            <p>متاح للعمل عن بعد في أي وقت</p>
+          </div>
+        </div>
+        
+        <div class="footer">
+          جميع الحقوق محفوظة © 2025
+        </div>
+      </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script>
+      // سكريبت القائمة الجانبية
+      document.addEventListener('DOMContentLoaded', function() {
+        // زر القائمة الجانبية
+        const sidebarToggle = document.querySelector('.sidebar-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        
+        if (sidebarToggle) {
+          sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
